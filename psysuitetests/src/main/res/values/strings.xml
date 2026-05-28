@@ -1,72 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name" translatable="false">Psysuite</string>
 
-    <string name="label_bindings" translatable="false">Temporal Bindings</string>
     <string name="label_temporal_tests">Temporal Tests</string>
-    <string name="label_miscellaneous_tests">Various Tests</string>
     <string name="label_decision_tests">Decisions Tests</string>
     <string name="label_illusion_tests">Illusions Tests</string>
     <string name="label_prediction_tests">Prediction Tests</string>
+    <string name="label_miscellaneous_tests">Miscellaneous Tests</string>
 
 
     <string-array name="tid_sessions_array">
-        <item>seleziona...</item>
-        <item>test iniziale</item>
-        <item>sessione 1</item>
-        <item>sessione 2</item>
-        <item>sessione 3</item>
-        <item>sessione 4</item>
-        <item>sessione 5</item>
-        <item>test finale</item>
+        <item>select...</item>
+        <item>baseline test</item>
+        <item>session 1</item>
+        <item>session 2</item>
+        <item>session 3</item>
+        <item>session 4</item>
+        <item>session 5</item>
+        <item>final test</item>
     </string-array>
-
 
     <!-- BISECTION -->
     <string name="start_bisection">MULTIMODAL BISECTION</string>
 
-    <string-array name="bis_sessions_array">
-        <item>pre test</item>
-        <item>session 1</item>
-        <item>session 2</item>
-        <item>session 3</item>
-        <item>post test</item>
-    </string-array>
+    <string name="bisection_question_text_audio">Was the second sound closer to the first or the third one?</string>
+    <string name="bisection_question_text_visual">Was the yellow light closer to the green or the red one?</string>
+    <string name="bisection_question_text_tactile">Was the second vibration closer to the first or the third one?</string>
+    <string name="bisection_question_text_mixed">Was the second stimulus closer to the first or the third one?</string>
 
-    <string name="bisection_question_text_audio">Il secondo suono era più vicino al primo o al terzo?</string>
-    <string name="bisection_question_text_visual">La luce gialla era più vicina alla verde o alla rossa?</string>
-    <string name="bisection_question_text_tactile">La seconda vibrazione era più vicina alla prima o alla terza?</string>
-    <string name="bisection_question_text_mixed">Il secondo stimolo era più vicino al primo o al terzo?</string>
-
-    <string name="bisection_rb1_text">primo</string>
-    <string name="bisection_rb2_text">Uguale</string>
-    <string name="bisection_rb3_text">terzo</string>
+    <string name="bisection_rb1_text">first</string>
+    <string name="bisection_rb2_text">same</string>
+    <string name="bisection_rb3_text">third</string>
 
     <!-- REACTION TIME -->
-    <string name="start_reactiontimes">TEMPO DI REAZIONE (RT)</string>
-    <string name="tr_label_short" translatable="false">TR</string>
-
+    <string name="start_reactiontimes">REACTION TIMES (RT)</string>
 
     <!-- TFI TEST -->
     <string name="tfi_label">FLASH ILLUSIONS (DFI/TFI)</string>
-    <string name="tfi_question">Indica il numero di stimoli che hai percepito per ciascuna delle 3 modalità</string>
+    <string name="tfi_question">Indicate the stimuli number that you perceived for each modality</string>
 
-    <string name="tfi_warning_null_answer">seleziona almeno uno stimolo maggiore di zero</string>
+    <string name="tfi_warning_null_answer">Select at least one stimulus higher than zero</string>
+
 
     <!-- RT TEST -->
-    <string name="RT_label">TEMPI DI REAZIONE (RT)</string>
-
+    <string name="RT_label">REACTION TIMES (RT)</string>
 
     <!-- SAMPLE TEST -->
-    <string name="samples_test">CUSTOM STIMULI CREATOR (CSC) </string>
+    <string name="samples_test">CUSTOM TRIALS GENERATION</string>
 
-    <string name="select_source">Seleziona almeno una modalità di stimolazione</string>
+    <string name="select_source">Select at least one stimulation modality</string>
 
     <string-array name="sample_audio_types">
         <item>Tone</item>
         <item>MediaPlayer</item>
         <item>AudioTrack</item>
-        <item>Nativo</item>
+        <item>Native</item>
     </string-array>
 
     <string-array name="sample_visual_types">
@@ -75,10 +64,9 @@
     </string-array>
 
     <string-array name="sample_tactile_types">
-        <item>@string/single</item>
-        <item>@string/sequence</item>
+        <item>single</item>
+        <item>sequence</item>
     </string-array>
-
 
     <string-array name="sample_audioassets_array">
         <item>t1000hz_7ms.wav</item>
@@ -93,20 +81,19 @@
         <item>t200hz_1000ms.wav</item>
     </string-array>
 
-    <string name="abort_test">ANNULLA TEST</string>
+    <string name="abort_test">ABORT TEST</string>
     <string name="iti">ITI [s]</string>
-    <string name="repeat_trial">ripeti il trial</string>
-    <string name="show_result">mostra risultato</string>
+    <string name="repeat_trial">repeat trial</string>
+    <string name="show_result">show result</string>
 
-    <string name="condition_not_allowed">codice sub-test non ammesso</string>
-    <string name="error_test_code_not_recognized">Test non riconosciuto</string>
+    <string name="condition_not_allowed">sub-test code not allowed</string>
+    <string name="error_test_code_not_recognized">Test not recognized</string>
 
-    <string name="do_training" translatable="false">training</string>
-    <string name="trials_management">gestione trials</string>
-    <string name="sequence">sequenza</string>
-    <string name="nblocks">Num. Blocchi</string>
-    <string name="durblock_sec">Durata Blocchi [sec]</string>
-    <string name="durblock_msec">Durata Blocchi [ms]</string>
-    <string name="firstcond">Cond. Iniziale</string>
+    <string name="trials_management">trials management</string>
+    <string name="sequence">sequence</string>
+    <string name="nblocks">Blocks numb.</string>
+    <string name="durblock_sec">Blocks Duration [sec]</string>
+    <string name="durblock_msec">Blocks Duration [ms]</string>
+    <string name="firstcond">First cond.</string>
 
-</resources>
+    </resources>
