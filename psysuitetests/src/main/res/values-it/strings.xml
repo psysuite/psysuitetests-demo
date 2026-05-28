@@ -7,82 +7,7 @@
     <string name="label_prediction_tests">Test di Predizione</string>
     <string name="label_miscellaneous_tests">Test Vari</string>
 
-    <!-- ATB -->
-    <string name="atb_subtask_time_single">Sing Stim</string>
-    <string name="atb_subtask_time_double">Dop Stim</string>
-
-    <string name="atb_subtask_time_single_tod">Sing Stim Toddl</string>
-    <string name="atb_subtask_time_double_tod">Dop Stim Toddl</string>
-
-    <string name="atb_subtask_time_infants">tempo infanti</string>
-    <string name="atb_subtask_time_infants_tag">INF</string>
-
-    <string name="atb_rb1_text">uguali</string>
-    <string name="atb_rb3_text">diversi</string>
-    <string name="atb_question">Sono uguali?</string>
-
-    <!-- ATVB -->
-    <string name="atvb_subtask_time_single">Sing Stim</string>
-    <string name="atvb_subtask_time_single_b">Sing Stim bilanciato</string>
-    <string name="atvb_subtask_time_single_b2">Sing Stim bilanciato 2</string>
-    <string name="atvb_subtask_time_double">Dop Stim</string>
-    <string name="atvb_subtask_time_double2">Dop Stim bilanciato</string>
-
-    <string name="atvb_rb1_text">si</string>
-    <string name="atvb_rb3_text">no</string>
-    <string name="atvb_question_equal">Sono uguali?</string>
-    <string name="atvb_question_synchro">Sono simultanei?</string>
-    <string name="atvb_question_whichsecond">Che tipo di stimolo è il secondo?</string>
-
-    <!-- TVB -->
-    <string name="tvb_subtask_time_single">Sing Stim</string>
-    <string name="tvb_subtask_time_double">Dop Stim</string>
-
-    <string name="tvb_subtask_time_single_tod">Sing Stim Toddl</string>
-    <string name="tvb_subtask_time_double_tod">Dop Stim Toddl</string>
-
-    <string name="tvb_rb1_text">uguali</string>
-    <string name="tvb_rb3_text">diversi</string>
-    <string name="tvb_question">Sono uguali?</string>
-
-    <!-- AVB -->
-    <string name="avb_subtask_time_single">Sing Stim</string>
-    <string name="avb_subtask_time_double">Dop Stim</string>
-
-    <string name="avb_subtask_time_single_tod">Sing Stim Toddl</string>
-    <string name="avb_subtask_time_double_tod">Dop Stim Toddl</string>
-
-    <string name="avb_rb1_text">uguali</string>
-    <string name="avb_rb3_text">diversi</string>
-    <string name="avb_question">Sono uguali?</string>
-
-    <!-- TIR -->
-    <string name="tir_label">Temporal Interval Reproduction (TIR)</string>
-
-    <!-- TID -->
-    <string name="tid_label">Temporal Interval Discrimination (TID)</string>
-
-    <string name="tid_question_text">Quale intervallo in ciascuna coppia era maggiore?\nnella prima o nella seconda coppia?</string>
-
-    <string name="tid_rb1_text">primo</string>
-    <string name="tid_rb2_text">secondo</string>
-    <string name="tid_rb3_text">terzo</string>
-
-    <string name="tid_rb_male_text">M</string>
-    <string name="tid_rb_female_text">F</string>
-
-    <string name="tid_rb_short_text">CORTO</string>
-    <string name="tid_rb_long_text">LUNGO</string>
-
-    <string name="tid_rb_short_text_short">S</string>
-    <string name="tid_rb_long_text_short">L</string>
-
-    <string name="tid_rb_audio_text">audio</string>
-    <string name="tid_rb_vibro_text">vibro</string>
-
-    <string name="tid_select_training_first_modality">Seleziona un\'opzione per la modalità iniziale di training</string>
-
-    <string-array name="tid_sessions_array">
+   <string-array name="tid_sessions_array">
         <item>seleziona...</item>
         <item>test iniziale</item>
         <item>sessione 1</item>
@@ -92,15 +17,6 @@
         <item>sessione 5</item>
         <item>test finale</item>
     </string-array>
-
-    <string name="tid_group_interval_text">gruppo intervallo</string>
-    <string name="tid_group_modality_text">gruppo modalità</string>
-    <string name="tid_group_first_modality_text">prima modalità</string>
-
-    <string name="tid_insert_subjectdata_button_text">INSERISCI SOGGETTO</string>
-    <string name="tid_start_pre_text">INIZIA PRE-TESTS</string>
-    <string name="tid_start_post_text">INIZIA POST-TESTS</string>
-    <string name="tid_start_training_text">INIZIA TRAINING</string>
 
     <!-- BISECTION -->
     <string name="start_bisection">BISEZIONE MULTIMODALE</string>
@@ -117,48 +33,12 @@
     <!-- REACTION TIME -->
     <string name="start_reactiontimes">TEMPO DI REAZIONE (RT)</string>
 
-    <!-- MUSICAL METERS -->
-    <string name="start_musicalmeter">MUSICAL METER DISCRIMINATION (MMD)</string>
-
-    <string name="mmeters_question_text">Le due sequenze sono uguali?</string>
-
-    <string name="mmeters_rb1_text">si</string>
-    <string name="mmeters_rb2_text">Uguale</string>
-    <string name="mmeters_rb3_text">no</string>
-
-    <!-- TFI TEST -->
+      <!-- TFI TEST -->
     <string name="tfi_label">FLASH ILLUSIONS (DFI/TFI)</string>
     <string name="tfi_question">Indica il numero di stimoli che hai percepito per ciascuna delle 3 modalità</string>
 
     <string name="tfi_warning_null_answer">seleziona almeno uno stimolo maggiore di zero</string>
 
-    <!-- GROUND-FIGURE TEST -->
-    <string name="start_figure_ground_illusion">FIGURE GROUND ILLUSION (FGI)</string>
-    <string name="label_fgi">FIGURE GROUND ILLUSION (FGI)</string>
-    <string name="label_fgi2">BISTABLE IMAGES (BI)</string>
-
-    <string name="label_jar">VASO</string>
-    <string name="label_faces">FACCE</string>
-    <string name="label_youngwoman">GIOVANE</string>
-    <string name="label_elderlywoman">ANZIANA</string>
-    <string name="label_musician">MUSICISTA</string>
-    <string name="label_woman">DONNA</string>
-
-    <!-- RIVALRY GROUPING TEST -->
-    <string name="label_rivgrp">RIVALRY vs GROUPING\n(RIVGRP)</string>
-
-    <string name="label_house">CASA</string>
-    <string name="label_face">FACCIA</string>
-    <string name="label_car">MACCHINA</string>
-
-    <string name="warn_blocks">Il numero di blocchi deve essere maggiore di 1 e multiplo di 2</string>
-
-    <!-- BEADS TEST -->
-    <string name="label_beads">BEADS TEST (BEADS)</string>
-    <string name="label_jar1">Urna 1</string>
-    <string name="label_jar2">Urna 2</string>
-    <string name="label_new_bead">Nuova pallina</string>
-    <string name="label_choose_jar">Scegli Urna</string>
 
     <!-- RT TEST -->
     <string name="RT_label">TEMPI DI REAZIONE (RT)</string>
