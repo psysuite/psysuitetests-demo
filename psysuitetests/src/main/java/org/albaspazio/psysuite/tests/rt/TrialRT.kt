@@ -19,31 +19,19 @@ class TrialRT (id:Int=-1, type:Int, label:String,
         @JvmStatic val LOG_HEADER = "id\tlabel\tresponse\terror\n"
     }
 
-    private var error:Int = 0
-
     init {
         initTrial(magnitude)
     }
 
-    override fun initTrial(newvalue:Float):Long {
-        magnitude       = newvalue
-        correct_answer  = 0
-        return stim_value
-    }
-
     // result: user's button press duration == elapsed
-    // success is true if the present error is smaller than the previous one
-    // if first trial, success is always true
+    // success is always true, but when receives a result == -1 (user did not press the button)
     override fun setResponse(result:Int, elapsedms:Long, prev_tr: TrialBasic?, extra_text:String) {
-        user_answer         = result
-        prev_trial          = prev_tr
-        error               =   if(result == -1)    1
-                                else                0
-        user_answer_extra   = extra_text
+        super.setResponse(result, elapsedms, prev_tr, extra_text)
+        success  = result != -1
     }
 
     // data exported to log file
     override fun Log():String{
-        return "$id\t$label\t$user_answer\t$error\n"
+        return "$id\t$label\t$user_answer\t${!success}\n"
     }
 }

@@ -123,9 +123,9 @@ class TestRT(
         val elapsed = Date().time - mTrialStartOnset
 
         if(elapsed > mTrialAbortTime - 10L)
-            setAnswer(-1, elapsed)
+            setResponse(-1, elapsed)
         else
-            setAnswer(elapsed.toInt(), elapsed)
+            setResponse(elapsed.toInt(), elapsed)
 
         mStimuliHandler.removeCallbacksAndMessages(null)
         binding.root.removeView(mRespButton)

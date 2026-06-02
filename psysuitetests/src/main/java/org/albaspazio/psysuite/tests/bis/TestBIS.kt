@@ -306,11 +306,11 @@ class TestBIS(
 
         // manage SUB/SUPRA
         lastStimulusDelay = if(subject.type >= TEST_BISECTION_AUDIO_SUPRA) {
-                                taskADAParams = TaskADAParams(5F, nAT_range_sub, nAdaptiveTrials, LAST_STIMULUS_DELAY_SUPRA/2)
+                                taskADAParams = TaskADAParams(1F, nAT_range_sub, nAdaptiveTrials, LAST_STIMULUS_DELAY_SUPRA/2)
                                 LAST_STIMULUS_DELAY_SUPRA
                             }
                             else {
-                                taskADAParams = TaskADAParams(5F, nAT_range_sub, nAdaptiveTrials, LAST_STIMULUS_DELAY_SUB/2)
+                                taskADAParams = TaskADAParams(1F, nAT_range_sub, nAdaptiveTrials, LAST_STIMULUS_DELAY_SUB/2)
                                 LAST_STIMULUS_DELAY_SUB
                             }
         midLatency      = lastStimulusDelay / 2
@@ -453,7 +453,6 @@ class TestBIS(
     }
 
     private fun createTrialsAdaptive():List<TrialBasic>{
-        var cnt = -1
         val trials: MutableList<TrialBasic> = mutableListOf()
 
         val numFixedTrials = 10
