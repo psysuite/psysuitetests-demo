@@ -68,12 +68,11 @@ dependencies {
     implementation(Dependencies.Moshi.moshiKt)
 
     // Test dependencies
-    testImplementation("junit:junit:4.13.2")
-    testImplementation("org.mockito:mockito-core:5.2.0")
-    testImplementation("org.mockito.kotlin:mockito-kotlin:5.1.0")
+    testImplementation(Dependencies.mockito_core)
+    testImplementation(Dependencies.mockito_kotlin)
 
     // Android test dependencies
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.ext:junit-ktx:1.2.1")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    testImplementation(Dependencies.junit)
+    androidTestImplementation(Dependencies.AndroidX.junitExt)
+    androidTestImplementation(Dependencies.AndroidX.testEspressoCore)
 }

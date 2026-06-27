@@ -51,10 +51,18 @@ object Versions {
     const val rxandroid = "2.1.1"
     const val sunmail = "1.6.7"
 
+    // org.albaspazio.psysuitepython
+
     const val junit = "4.13.2"
     const val coroutines = "1.6.4"
     const val testRunner = "1.5.2"
     const val testEspressoCore = "3.5.1"
+
+    const val mockito = "5.2.0"
+    const val mockito_kotlin = "5.1.0"
+    const val junitKtx = "1.2.1"
+    const val junitExt = "1.1.5"
+
 }
 
 object Dependencies {
@@ -86,6 +94,8 @@ object Dependencies {
 
         const val testRunner        = "androidx.test:runner:${Versions.testRunner}"
         const val testEspressoCore  = "androidx.test.espresso:espresso-core:${Versions.testEspressoCore}"
+        const val junitKtx          = "androidx.test.ext:junit-ktx:${Versions.junitKtx}"
+        const val junitExt          = "androidx.test.ext:junit:${Versions.junitExt}"
     }
 
     object Kotlin {
@@ -116,7 +126,11 @@ object Dependencies {
         const val gson      = "com.google.code.gson:gson:2.10.1"
     }
 
-    const val junit         = "junit:junit:${Versions.junit}"
+    const val junit             = "junit:junit:${Versions.junit}"
+    const val mockito_core      = "org.mockito:mockito-core:${Versions.mockito}"
+    const val mockito_kotlin    = "org.mockito.kotlin:mockito-kotlin:${Versions.mockito_kotlin}"
+
+
 }
 
 object ProGuards {
