@@ -11,7 +11,14 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+
+    versionCatalogs {
+        create("libs") {
+            from(files("../../psysuite/gradle/libs.versions.toml"))
+        }
+    }
 }
+
 
 
 include(":core")
