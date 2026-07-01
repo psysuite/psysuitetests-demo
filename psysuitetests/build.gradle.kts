@@ -1,7 +1,7 @@
 plugins {
-    id(Plugins.androidLibrary)
-    id(Plugins.kotlinAndroid)
-    id("kotlin-parcelize")
+    id(libs.plugins.android.library.get().pluginId)
+    id(libs.plugins.kotlin.android.get().pluginId)
+    id(libs.plugins.kotlin.parcelize.get().pluginId)
 }
 
 android {
@@ -49,31 +49,27 @@ dependencies {
     api(project(":core"))
     api(project(":psysuitepython"))
 
-    // Kotlin
-    implementation(Dependencies.Kotlin.stdLib)
-    implementation(Dependencies.Kotlin.coroutinesCore)
-    implementation(Dependencies.Kotlin.coroutinesAndroid)
+    implementation(libs.kotlin.stdlib)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
 
-    // Android
-    implementation(Dependencies.permissions)
-    implementation(Dependencies.AndroidX.legacy_support)
-    implementation(Dependencies.AndroidX.fragment)
-    implementation(Dependencies.AndroidX.lifecycleviewmodel)
-    implementation(Dependencies.AndroidX.ktxCore)
-    implementation(Dependencies.AndroidX.appCompat)
-    implementation(Dependencies.AndroidX.recycleView)
-    api(Dependencies.AndroidX.preference)
+    implementation(libs.permissions)
+    implementation(libs.androidx.legacy.support)
+    implementation(libs.androidx.fragment)
+    implementation(libs.androidx.lifecycle.viewmodel)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.recyclerview)
+    api(libs.androidx.preference)
 
-    // Moshi
-    implementation(Dependencies.Moshi.moshi)
-    implementation(Dependencies.Moshi.moshiKt)
+    implementation(libs.moshi)
+    implementation(libs.moshi.kotlin)
 
-    // Test dependencies
-    testImplementation(Dependencies.mockito_core)
-    testImplementation(Dependencies.mockito_kotlin)
+    testImplementation(libs.junit)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.kotlin)
 
-    // Android test dependencies
-    testImplementation(Dependencies.junit)
-    androidTestImplementation(Dependencies.AndroidX.junitExt)
-    androidTestImplementation(Dependencies.AndroidX.testEspressoCore)
+    androidTestImplementation(libs.androidx.test.junit.ext)
+    androidTestImplementation(libs.androidx.test.junit.ktx)
+    androidTestImplementation(libs.androidx.test.espresso.core)
 }
